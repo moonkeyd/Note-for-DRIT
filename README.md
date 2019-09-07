@@ -9,7 +9,7 @@ make some notes for the paper called DRIT
 
 与我们所熟知的Pix2Pix，CycleGAN一样，这篇文章所做的工作也是通过GAN实现I2I(image-to-image)。那么它们的区别是什么呢？为此，作者专门贴了一张图来说明它们之间的区别。
 
-![comparison](image/table.png)
+![comparison](image/table.PNG)
 
 从上表可以看出，最早的Pix2Pix模型使用的是成对的数据来训练，然而实际情况中成对的数据难以获得或是获得的代价很大，这给Pix2Pix的应用带来了一定局限性；CycleGAN虽然解决了不成对数据的转换问题，但是它和Pix2Pix一样，都是单一态输出，即对于一幅输入图片，只有一种风格的图片输出。之后的UNIT和BicycleGAN也是如此，在二者之间不能均衡。所以，这篇文章的贡献就很明显了：第一，在缺少成对数据的情况下仍然能够实现I2I；第二，对单一的输入有着不同风格的多模态输出。
 
