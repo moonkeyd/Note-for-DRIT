@@ -27,7 +27,8 @@ make some notes for the paper called DRIT
 2. content discrimination：判别器无法区分$E_X^c$或$E_Y^c$是哪一类，损失函数定义如下：
 
 $$
-L_{adv}^{content}(E_X^c,E_Y^c,D^c)=E_x[\frac{1}{2}logD^c(E_X^c(x))+\frac{1}{2}log(1-D^c(E_X^c(x)))]\\+E_y[\frac{1}{2}logD^c(E_Y^c(y))+\frac{1}{2}log(1-D^c(E_Y^c(y)))]
+L_{adv}^{content}(E_X^c,E_Y^c,D^c)=E_x[\frac{1}{2}logD^c(E_X^c(x))+\frac{1}{2}log(1-D^c(E_X^c(x)))]\\
++E_y[\frac{1}{2}logD^c(E_Y^c(y))+\frac{1}{2}log(1-D^c(E_Y^c(y)))]
 $$
 
 ```
